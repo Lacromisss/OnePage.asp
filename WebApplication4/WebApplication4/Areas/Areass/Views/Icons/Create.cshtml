@@ -1,0 +1,136 @@
+﻿@using WebApplication4.Models
+@model Icons
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<div class="container">
+    <!-- Title and Top Buttons Start -->
+    <div class="page-title-container">
+        <div class="row g-0">
+            <!-- Title Start -->
+            <div class="col-auto mb-3 mb-md-0 me-auto">
+                <div class="w-auto sw-md-30">
+                    <a href="#" class="muted-link pb-1 d-inline-block breadcrumb-back">
+                        <i data-cs-icon="chevron-left" data-cs-size="13"></i>
+                        <span class="text-small align-middle">Sliders</span>
+                    </a>
+                    <h1 class="mb-0 pb-0 display-4" id="title">Slider Create</h1>
+                </div>
+            </div>
+            <!-- Title End -->
+        </div>
+    </div>
+    <!-- Title and Top Buttons End -->
+
+    <div class="row">
+        <div class="col-xl-12">
+            <!-- Product Info Start -->
+            <div class="mb-5">
+                <div class="card">
+                    <div class="card-body">
+                        <form method="post" enctype="multipart/form-data">
+                            <div class="mb-3">
+                                <label asp-for="Icoo" class="form-label"></label>
+                                <input asp-for="Icoo" class="form-control" />
+                                <span class="text-primary" asp-validation-for="Icoo"></span>
+                            </div>
+                           
+                            <div class="mb-3">
+                                <input type="submit" class="btn bg-primary" value="Create" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Info End -->
+        </div>
+    </div>
+</div>  
+<table class="table">
+  <thead>
+  
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Html icons</td>
+      <td>fab fa-html5</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Css icons</td>
+      <td>fab fa-css3-alt</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+
+      <td >Js icons</td>
+      <td >fab fa-js-square</td>
+    </tr>
+      <tr>
+      <th scope="row">4</th>
+
+      <td >Angular icons</td>
+      <td >fab fa-angular</td>
+    </tr>
+      <tr>
+      <th scope="row">5</th>
+
+      <td >React icons</td>
+      <td >fab fa-react</td>
+    </tr>
+      <tr>
+      <th scope="row">6</th>
+
+      <td >Node Js icons</td>
+      <td >fab fa-node-js</td>
+    </tr>
+     <tr>
+      <th scope="row">7</th>
+
+      <td >Node Js icons</td>
+      <td >fab fa-node-js</td>
+    </tr>
+     <tr>
+      <th scope="row">8</th>
+
+      <td >sass  icons</td>
+      <td >fab fa-sass</td>
+    </tr>
+     <tr>
+      <th scope="row">9</th>
+
+      <td >Less </td>
+      <td >fab fa-less</td>
+    </tr>
+      <tr>
+      <th scope="row">10</th>
+
+      <td >Gulp </td>
+      <td >fab fa-gulp</td>
+    </tr>
+      <tr>
+      <th scope="row">11</th>
+
+      <td >Grunt </td>
+      <td >fab fa-grunt</td>
+    </tr>
+      <tr>
+      <th scope="row">12</th>
+
+      <td >WordPress </td>
+      <td >fab fa-wordpress</td>
+    </tr>
+     <tr>
+      <th scope="row">13</th>
+
+      <td >Npm </td>
+      <td >fab fa-npm</td>
+    </tr>
+  </tbody>
+  <h1>iconlar ve kodlari hazirdir sadece kopyala ve create olacaq..</h1>
+</table>
+
+

@@ -1,0 +1,25 @@
+﻿@using WebApplication4.Models
+@model Education
+@{
+    ViewData["Title"] = "Updatee";
+}
+
+
+  <div class="mb-3">
+      <form method="post">
+    <label asp-for="Title" class="form-label"> </label>
+    <input asp-for="Title" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+     <label asp-for="Subtitle" for="exampleInputEmail1" class="form-label"> </label>
+    <input asp-for="Subtitle" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+     <label asp-for="Description" for="exampleInputEmail1" class="form-label"> </label>
+    <input asp-for="Description" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+     <label asp-for="time" for="exampleInputEmail1" class="form-label"> </label>
+    <input  asp-for="time"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+         <label asp-for="Gpa" for="exampleInputEmail1" class="form-label"> </label>
+    <input  asp-for="Gpa"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+    <button type="submit" class="btn btn-primary" >Update</button>
+
+    </form>
+  </div>
+

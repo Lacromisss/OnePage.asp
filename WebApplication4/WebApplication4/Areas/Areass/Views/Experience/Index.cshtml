@@ -1,0 +1,46 @@
+﻿@using WebApplication4.Models
+@model List<Experience>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<table class="table">
+  <thead>
+      
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Subtitle</th>
+      <th scope="col">Description</th>
+      <th scope="col">Time</th>
+            <th scope="col">Delete</th>
+
+
+      <th scope="col">Update</th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+      @foreach (var item in Model)
+        {
+            
+        
+    <tr>
+      <td>@item.Title</td>
+            <td>@item.Subtitle</td>
+                        <td>@item.Description</td>
+                                                <td>@item.time</td>
+
+
+
+
+      <td><a asp-action="Delete" asp-area="Areass" asp-controller="Experience"  asp-route-Id="@item.Id"  class="btn btn-primary" >Deletee</a>
+</td>
+<td><a   asp-action="Updatee" asp-area="Areass" asp-controller="Experience" asp-route-Id="@item.Id"  class="btn btn-primary">Update</a>
+</td>
+    </tr>
+   
+
+        }
+  </tbody>
+</table>

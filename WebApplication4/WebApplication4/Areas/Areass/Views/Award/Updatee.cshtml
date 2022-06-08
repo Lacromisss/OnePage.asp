@@ -1,0 +1,18 @@
+﻿@using WebApplication4.Models
+@model Award
+@{
+    ViewData["Title"] = "Updatee";
+}
+
+  <div class="mb-3">
+      <form method="post">
+    <label asp-for="Description1" class="form-label"> </label>
+    <input asp-for="Description1" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+     <label asp-for="Description2" class="form-label"> </label>
+    <input asp-for="Description2" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    
+    
+    <button type="submit" class="btn btn-primary" >Update</button>
+
+    </form>
+  </div>
